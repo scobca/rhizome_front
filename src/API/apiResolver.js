@@ -1,6 +1,6 @@
 import axios from "axios"
 
-import apiConf from "@/api/api.conf"
+import apiConf from "@/API/api.conf"
 
 export default class ApiResolver {
     endpoint = "send-mail";

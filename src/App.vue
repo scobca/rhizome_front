@@ -1,8 +1,9 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+
+    <DarkModal></DarkModal>
+<!--    <router-link to="/">Home</router-link> |-->
+<!--    <router-link to="/about">About</router-link>-->
+
   <router-view/>
 </template>
 
@@ -28,3 +29,6 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script setup>
+import DarkModal from "@/components/DarkModal.vue";
+</script>
