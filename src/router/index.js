@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const routes = [
   {
@@ -23,5 +25,9 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+router.afterEach(() => {
+    AOS.refreshHard();
+});
 
 export default router
